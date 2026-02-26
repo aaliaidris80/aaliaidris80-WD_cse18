@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myname="abhay";
+        console.log("my name is" + myname);
+        console.log(typeof(myname));
+        var mymob=123456;
+        console.log("mobile number" + mymob);
+        console.log(typeof(mymob));
+        //boolean
+        var ismarried=true;
+        console.log(myname + "is married ?" + ismarried);
+        console.log(typeof(ismarried));
+        //null
+        var myemail=null;
+        console.log(myname +"email address"+ myemail);
+        console.log(typeof(myemail));
+        //bigint
+        var myvalue=BigInt(11122112112211222222212222121);
+        console.log(myvalue);
+       //symbol uniques primative data type in js
+       var val1=Symbol("hello");
+       var val2=Symbol("hello");
+       console.log(val1==val2);
+    //refrence or non primativevdata values types
+    //object{} is an entity where value is defined as key value pair
+     let myinfo={
+        name:"aalia", 
+        age:18,
+        mob:12345,
+        email:"abc@gmail.com",
+        ismarried:false,
+        branch:"cse",
+        section:18
+     }
+     console.log(myinfo.name);
+     console.log(myinfo);
+     //to find the lenght of the object
+     console.log(Object.keys(myinfo).length);
+     //array-collection of data type in js
+     let studentdetails=["m",24,false,"abc@gmail.com ","gzb"];
+     console.log(studentdetails[0]);
+     console.log(studentdetails.length);
+     for( i =0;i<studentdetails.length;i++){
+        console.log(studentdetails[i]);
+     }
+     //function is a bloock of code that perform particular task
+     function calc(){
+        let num1=5;
+        let num2=2;
+        console.log("adding like string " +num1+num2);
+        console.log("addition of 2 numbers " +(num1+num2));
+     }
+     calc();//function calling
+    </script>
+</body>
+</html>
