@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average marks</title>
+</head>
+<body>
+    <script>
+let marks=[33,44,49,98,43];
+let sum=0;
+for(i=0;i<marks.length;i++)
+{
+    sum=sum+marks[i];
+}
+let avg=sum/marks.length;
+console.log(avg);
+if(avg>=45)
+{
+    console.log("first division");
+}
+else if(  avg>30&&avg<45)
+{
+    console.log("second division");
+}
+    </script>
+    
+</body>
+</html>
