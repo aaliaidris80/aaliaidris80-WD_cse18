@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <script>
+        //for loop
+        let studentlist=["Charlotte","Viven","Darla","Portia"];
+        for(let i=0;i<studentlist.length;i++){
+            console.log(studentlist[i]);
+        }
+        //while loop
+        let x=0;
+        while(x<studentlist.length){
+            console.log(studentlist[x]);
+            x++;
+        }
+        // for of loop : it iterates over the values of the iterable object like arrays string maps and sets
+        for( let y of studentlist){
+            console.log(y);
+        }
+    </script>
+</body>
+</html>
