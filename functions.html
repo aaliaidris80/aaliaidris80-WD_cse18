@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTIONS in JS</title>
+</head>
+<body>
+    <script>
+        // normal,with parameters ,without parameters and default
+
+        // normal function
+        // function Demo()
+        //     {
+        //     }
+        //     Demo(); // fun ction calling or function invocation
+        //     function cal(a,b){
+        //         var num1=a;
+        //         var num2=b;
+        //         console.log("Addition of two number is " + (num1+num2));
+        //     }
+        //     cal(3,5);
+            
+            function add(a,b=5){
+                var  num1=a;
+            var num2=b;
+                var res1=num1+num2;
+                console.log("addition of two number is " +res1)
+            }
+
+            function mul(a,b=8){
+                var  num1=a;
+            var num2=b;
+                var res2=a*b;
+                 console.log("multiplication " +res2);
+            }
+            function div(a,b=6){
+
+                var  num1=a;
+            var num2=b;
+            var res3=a/b;
+                console.log("division of two  number is " +res3);
+            }
+            add(10,30);
+            mul(30,10);
+            div(30,10);
+        
+    </script>
+</body>
+</html>
