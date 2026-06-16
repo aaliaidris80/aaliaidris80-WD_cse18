@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annoymous function in js</title>
+</head>
+<body>
+   <script>
+    let demo1=function(){
+        console.log("hello");
+    } 
+    demo1();
+
+    // shortest way to write above function that is arrow function
+    let demo2=()=>{
+        console.log("abcdef");
+    }
+    demo2();
+
+    //above function in single line
+    let demo3=()=>console.log("helloooooo");
+    demo3();
+
+
+    // IIFE FUNCTION
+     
+    (function(){
+        console.log("IIFE in JS")
+    })();
+
+
+    // call back function in synchronous
+
+    function addres(callback){
+        var num1=5;
+        var num2=10;
+        var res=num1+num2;
+        callback(res)
+    }
+     
+    function result(res){
+        console.log("addition " +res);
+    }
+    addres(result);
+
+
+
+   </script>
+</body>
+</html>
